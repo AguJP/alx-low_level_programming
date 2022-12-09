@@ -17,11 +17,11 @@ int l = sizeof(long int);
 int ll = sizeof(long long int);
 int f = sizeof(float);
 
-printf("Size of a char: %d byte(s)\n", c); 
+printf("Size of a char: %d byte(s)\n", c);
 printf("Size of an int: %d byte(s)\n", i);
-printf("Size of a long int: %d byte(s)\n", l);  
-printf("Size of a long long int: %d byte(s)\n", ll); 
+printf("Size of a long int: %d byte(s)\n", l);
+printf("Size of a long long int: %d byte(s)\n", ll);
 printf("Size of a float: %d byte(s)\n", f);
 /* Program to return 0 (Success) */
-return (0); 
+return (0);
 }
