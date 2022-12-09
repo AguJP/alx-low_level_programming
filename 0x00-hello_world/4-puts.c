@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-/*
- * main - Entry point
+/**
+ * main - entry
+ * Description: The program prints texts to stdout
  * Return: 0
  */
 
