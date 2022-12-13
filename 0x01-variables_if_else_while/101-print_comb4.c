@@ -15,7 +15,7 @@ for (m = 0; m <= 9 ; m++)
 {
 for (n = 0; n <= 9; n++)
 {
-if (!((m == n) || (m > n) || (m == p) || (p > m=)))
+if (!((m == n) || (m > n) || (m == p) || (p > m)))
 /* Eliminate repetition */
 	{
 	putchar(p + '0');
