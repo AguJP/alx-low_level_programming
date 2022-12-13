@@ -19,11 +19,7 @@ if (m < n)
 	putchar(' ');
 	putchar((n / 10) + 48);
 	putchar((n % 10) + 48);
-	if (m == 98 || n == 99)
-	{
-	;
-	}
-	else
+	if (m != 98 || n != 99)
 	{
 	putchar(',');
 	putchar(' ');
