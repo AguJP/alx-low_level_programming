@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point, Prints all single digits of base 10 Using putchar function
+ * main - Entry point, Prints digits of base 10 Using putchar function
  * Return: Always 0
  */
 
