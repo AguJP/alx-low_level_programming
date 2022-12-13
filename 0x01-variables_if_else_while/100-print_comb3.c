@@ -16,7 +16,7 @@ for (m = 0; m <= 9 ; m++)
 	{
 	  putchar(m + '0');
 	  putchar(n + '0');
-	  if (m == 9 && n == 8)
+	  if (m == 8 && n == 9)
 	    {
 	      ;
 	    }
