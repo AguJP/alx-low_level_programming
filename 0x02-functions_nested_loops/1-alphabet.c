@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  * Description: Program to print alphabet in lower case
  * Return: void
  */
