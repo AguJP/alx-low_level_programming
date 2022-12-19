@@ -29,15 +29,12 @@ int main(void)
 		}
 
 
-		if (i == 99)
-		{
-			;
-		}
-		else
+		if (i < 99)
 		{
 			printf(" ");
 		}
 	}
+
 	printf("\n");
 
 	return (0);
