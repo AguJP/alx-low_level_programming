@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point
- * Description: Program to print integers 1 - 100, with Fizz, Buzz and FizzBuzz
- * for multiples of 3, 5 and 15 respectively
+ * main - Program to print integers 1 - 100, with Fizz, Buzz and FizzBuzz
  * Return: Always 0
  */
 
