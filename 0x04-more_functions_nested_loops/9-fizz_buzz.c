@@ -28,7 +28,7 @@ int main(void)
 		}
 		else
 		{
-			Printf("%d", i);
+			printf("%d", i);
 		}
 
 		if (i == 99)
