@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Program to print integers 1 - 100, with Fizz, Buzz and FizzBuzz
- * Return: Always 0
+ * main - Program to print Fizz Buzz
+ * Return: 0
  */
 
 int main(void)
