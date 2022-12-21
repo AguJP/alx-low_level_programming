@@ -21,7 +21,7 @@ void puts_half(char *str)
 
 	if ((j % 2) != 0)
 	{
-		n++ ;
+		n++;
 	}
 
 	for (k = n; k < j; k++)
