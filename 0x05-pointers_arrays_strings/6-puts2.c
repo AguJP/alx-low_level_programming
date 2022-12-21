@@ -9,25 +9,15 @@
 void puts2(char *str)
 {
 	int i;
-	int j = 0;
-	int n;
-	int k;
 
-	for (i = 0; str[i] != ('\n'); i++)
+	for (i = 0; str[i] != ('\0'); i++)
 	{
-		j++;
-	}
-
-	n = (j - 1);
-
-	for (k = 0; k < n; k++)
-	{
-		if ((k % 2) == 0)
+		if ((i % 2) == 0)
 		{
-			printf("%d", str[k]);
+			_putchar(str[i]);
 		}
 	}
 
-	printf("\n");
+	_putchar('\n');
 
 }
