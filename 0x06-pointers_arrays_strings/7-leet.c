@@ -3,7 +3,7 @@
 /**
  * leet - Function to encode a string into 1337
  * @str: string variable
- * Return: Encoded string variable
+ * Return: Pointer to encoded string variable
  */
 
 char *leet(char *str)
@@ -14,7 +14,7 @@ char *leet(char *str)
 
 	while (str[i])
 	{
-		for(j = 0; j <= 7; j++)
+		for (j = 0; j <= 7; j++)
 		{
 			if (str[i] == leet[j] || str[i] - 32 == leet[j])
 			{
