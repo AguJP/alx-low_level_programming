@@ -6,7 +6,7 @@
  * Return: Encoded string variable
  */
 
-char *leet(char *)
+char *leet(char *str)
 {
 	int i = 0;
 	int j;
