@@ -8,15 +8,13 @@
  * Return: pointer to memory area s
  */
 
-char *_memset(char *s, char b, unsigned int n)
+void *_memset(void *s. int c, size_t n)
 {
-	unsigned char* memarea = s;
-	int i;
+	unsigned int index;
+	unsigned char *memory = s, value = c;
 
-	for (i = 0; i < n; i++)
-	{
-		memarea[i] = b;
-	}
+	for (index = 0; index < n; index ++)
+		memory[index] = value;
 
-	return (s);
+	return (memory);
 }
