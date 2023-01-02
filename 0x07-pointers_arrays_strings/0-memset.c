@@ -10,12 +10,13 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char* memarea = s;
+	unsigned char *memarea = s;
+	unsigned char value = b;
 
 	while (n--)
 	{
-		*memarea++ = (unsigned char)b;
+		*memarea++ = value;
 	}
 
-	return (s);
+	return (memarea);
 }
