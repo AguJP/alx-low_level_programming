@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- * is_prime_number - Function to check for prime numbers
- * @n: number to be checked for prime
- * Return: Always 1
- */
-
 int is_prime_recursive(int n, int i);
 int is_prime_number(int n);
 
@@ -31,6 +25,12 @@ int is_prime_recursive(int n, int i)
 
 	return (is_prime_recursive(n, i + 2));
 }
+
+/**
+ * is_prime_number - Function to check for prime numbers
+ * @n: number to be checked for prime
+ * Return: Always 1
+ */
 
 int is_prime_number(int n)
 {
