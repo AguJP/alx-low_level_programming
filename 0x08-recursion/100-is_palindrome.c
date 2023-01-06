@@ -51,5 +51,5 @@ int is_palindrome(char *s)
 	int i;
 
 	i = _strlen(s);
-	return (is_palindrome_recursive(s, 0, i -1));
+	return (is_palindrome_recursive(s, 0, i - 1));
 }
