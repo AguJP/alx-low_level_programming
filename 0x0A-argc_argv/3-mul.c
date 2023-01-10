@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -15,12 +16,14 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	else
+	{
+		int i, j;
 
-	int i, j;
-
-	i = atoi(argv[1]);
-	j = atoi(argv[1]);
-	printf("%d\n", i * j);
+		i = atoi(argv[1]);
+		j = atoi(argv[1]);
+		printf("%d\n", i * j);
+	}
 
 	return (0);
 }
