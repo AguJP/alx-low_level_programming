@@ -12,7 +12,9 @@
 int is_valid_num(char *str)
 {
 	int len = strlen(str);
-	for (int i = 0; i < len; i+++)
+	int i;
+
+	for (i = 0; i < len; i++)
 	{
 		if (!isdigit(str[i]))
 		{
@@ -38,7 +40,9 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 	int sum = 0;
-	for (int i =1; i < argc; i++)
+	int i;
+
+	for (i = 1; i < argc; i++)
 	{
 		if (!is_valid_num(argv[i]))
 		{
