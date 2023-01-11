@@ -35,14 +35,14 @@ int is_valid_num(char *str)
 
 int main(int argc, char *argv[])
 {
+	int sum = 0;
+	int i;
+
 	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
-
-	int sum = 0;
-	int i;
 
 	for (i = 1; i < argc; i++)
 	{
