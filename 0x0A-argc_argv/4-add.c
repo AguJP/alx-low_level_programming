@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <string.h>
+#include <ctype.h>
 
 /**
  * is_valid_num - Program to check for number
@@ -39,6 +40,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+
 	int sum = 0;
 	int i;
 
