@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	int sum = 0;
 	int i;
 
-	if (argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -53,8 +53,11 @@ int main(int argc, char *argv[])
 
 	i = atoi(argv[1]);
 
-	if (i < 0)
+	if (i <= 0)
+	{
 		printf("0\n");
+		return (0);
+	}
 	else
 	{
 		while (i >= 25)
