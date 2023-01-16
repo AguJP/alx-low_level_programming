@@ -1,0 +1,21 @@
+#include "main.h"
+
+/**
+ * _strdup - Function to duplicate a string and return pointer to duplicate
+ * @str: string to duplicate
+ * Return: pointer to duplicate if successfull, else NULL
+ */
+
+char *_strdup(char *str)
+{
+	int len = 0;
+	char *a = str;
+
+	while (*a++ != '\0')
+	{
+		len++;
+	}
+
+	char *dup = malloc(len + 1);
+
+	if (dup 
