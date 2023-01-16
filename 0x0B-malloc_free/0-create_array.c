@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
 
 /**
  * create_array - Function to create an array of initialized chars
@@ -21,10 +18,12 @@ char *create_array(unsigned int size, char c)
 	}
 
 	a = (char *) malloc(sizeof(c) * size);
-	if ((a == NULL))
+
+	if (a == 0)
 	{
 		return (NULL);
 	}
+
 	for (i = 0; i < size; i++)
 	{
 		*(a + i) = c;
