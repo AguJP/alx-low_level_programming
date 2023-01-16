@@ -10,6 +10,8 @@ char *_strdup(char *str)
 {
 	int len = 0;
 	char *a = str;
+	char *dup;
+	char *a1;
 
 	while (*a++ != '\0')
 	{
@@ -23,7 +25,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	char *a1 = dup;
+	a1 = dup;
 	char *a2 = str;
 
 	while (*a2 != '\0')
