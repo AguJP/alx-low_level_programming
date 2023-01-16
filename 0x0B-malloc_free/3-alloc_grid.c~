@@ -1,0 +1,9 @@
+#include "main.h"
+
+/**
+ * alloc_grid - Function to return pointer to an initialized 2D array
+ * @width: width of array
+ * @height: height of array
+ * Return: Pointer to array if successful, else NULL
+ */
+
