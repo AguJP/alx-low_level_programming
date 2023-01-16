@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c
+
 /**
  * _strdup - Function to duplicate a string and return pointer to duplicate
  * @str: string to duplicate
@@ -8,32 +8,23 @@
 
 char *_strdup(char *str)
 {
-	int len = 0;
-	char *a = str;
-	char *dup;
-	char *a1;
-	char *a2;
+	char *dst;
+	unsigned int size;
 
-	while (*a++ != '\0')
-	{
-		len++;
-	}
-
-	dup = (char *)malloc(len + 1);
-
-	if ((dup == 0) || (dup == NULL))
+	if (str == 0)
 	{
 		return (NULL);
 	}
 
-	a1 = dup;
-	a2 = str;
+	size = _strlen(str) + 1;
+	dst = (char *) malloc(size * sizeof(char));
 
-	while (*a2 != '\0')
+	if (dst == 0)
 	{
-		*a1++ = *a2++;
+		return (NULL);
 	}
-	*a1 = '\0';
+	_strcpy(dst, str);
 
-	return (dup);
+	return (dst);
+
 }
