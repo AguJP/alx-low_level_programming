@@ -1,5 +1,5 @@
 #include "main.h"
-
+0;276;0c
 /**
  * _strdup - Function to duplicate a string and return pointer to duplicate
  * @str: string to duplicate
@@ -12,6 +12,7 @@ char *_strdup(char *str)
 	char *a = str;
 	char *dup;
 	char *a1;
+	char *a2;
 
 	while (*a++ != '\0')
 	{
@@ -26,7 +27,7 @@ char *_strdup(char *str)
 	}
 
 	a1 = dup;
-	char *a2 = str;
+	a2 = str;
 
 	while (*a2 != '\0')
 	{
