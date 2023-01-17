@@ -1,0 +1,11 @@
+#include "main.h"
+
+/**
+ * strtow - Function to split a string into words
+ * @str: string to be split
+ * Return: Pointer to array of strings if successfull, else NULL
+ */
+
+char **strtow(char *str)
+{
+	
