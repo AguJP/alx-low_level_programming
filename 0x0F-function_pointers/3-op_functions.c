@@ -22,7 +22,7 @@ int op_add(int a, int b)
 
 
 /**
- * op_sub -Function to subtract an integer from another
+ * op_sub - Function to subtract an integer from another
  * @a: First integer
  * @b: Second integer
  * Return: Difference of b from a
@@ -35,7 +35,7 @@ int op_sub(int a, int b)
 
 
 /**
- * op_mul -Function to multiply two integers
+ * op_mul - Function to multiply two integers
  * @a: First integer
  * @b: Second integer
  * Return: Product of a and b
@@ -48,10 +48,10 @@ int op_mul(int a, int b)
 
 
 /**
- * op_div -Function to divide two integers
+ * op_div - Function to divide two integers
  * @a: First integer
  * @b: Second integer
- * Return: a divided by b
+ * Return: quotient of a divided by b
  */
 
 int op_div(int a, int b)
@@ -61,7 +61,7 @@ int op_div(int a, int b)
 
 
 /**
- * op_mod -Function to determine modulo of two integers
+ * op_mod - Function to determine modulo of two integers
  * @a: First integer
  * @b: Second integer
  * Return: a modulo b
