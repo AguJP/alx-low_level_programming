@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	int num_bytes;
 	int i;
-	unsigned char *main_ptr;
+	char *main_ptr;
 
 	if (argc != 2)
 	{
@@ -28,7 +28,8 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
-	main_ptr = (unsigned char *)main;
+	main_ptr = (char *)main;
+
 	for (i = 0; i < num_bytes; i++)
 	{
 		if (i == num_bytes - 1)
@@ -38,7 +39,6 @@ int main(int argc, char **argv)
 		}
 		printf("%02hhx", main_ptr[i]);
 	}
-	printf("\n");
 
 	return (0);
 }
