@@ -38,6 +38,7 @@ int main(int argc, char **argv)
 		}
 		printf("%02hhx", main_ptr[i]);
 	}
+	printf("\n");
 
 	return (0);
 }
