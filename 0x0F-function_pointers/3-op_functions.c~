@@ -1,0 +1,14 @@
+#include "function_pointers.h"
+
+/**
+ * op_add - function to add two integers
+ * @a: First integer
+ * @b: second integer
+ * Return: sum of a and b
+ */
+
+int op_add(int a, int b)
+{
+	return (a + b);
+}
+
