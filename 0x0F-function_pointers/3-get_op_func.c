@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * get_op_funct - Function to select the correct arithmetic operation
+ * get_op_func - Function to select the correct arithmetic operation
  * @s: Arithmetic operator passed
  * Return: Pointer to the corresponding function.
  */
