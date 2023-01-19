@@ -33,10 +33,10 @@ int main(int argc, char **argv)
 	{
 		if (i == num_bytes - 1)
 		{
-			printf("%02x\n", *(main_ptr + i));
+			printf("%02hhx\n", main_ptr[i]);
 			break;
 		}
-		printf("%02x", *(main_ptr + i));
+		printf("%02hhx", main_ptr[i]);
 	}
 
 	return (0);
