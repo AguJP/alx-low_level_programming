@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	num_bytes = atoi(argv[i]);
+	num_bytes = atoi(argv[1]);
 	if (num_bytes < 0)
 	{
 		printf("Error\n");
@@ -31,9 +31,13 @@ int main(int argc, char **argv)
 	main_ptr = (unsigned char *)main;
 	for (i = 0; i < num_bytes; i++)
 	{
+		if (i == num_bytes - 1)
+		{
+			printf("%02x\n", *(main_ptr + i));
+			break;
+		}
 		printf("%02x", *(main_ptr + i));
 	}
-	printf("\n");
 
 	return (0);
 }
