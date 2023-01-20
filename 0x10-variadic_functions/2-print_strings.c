@@ -11,7 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list sum;
 	unsigned int i;
-	char s;
+	char *s;
 
 	va_start(sum, n);
 
