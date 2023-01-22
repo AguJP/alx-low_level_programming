@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * string_nconcat - Function to concatenate two strings
@@ -10,7 +11,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	void *p;
+	char *p;
 	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
 	while (s1 && s1[len1])
@@ -20,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2++;
 
 	if (n < len2)
-		p = malloc(sizeof(char) * (len1 + n +1));
+		p = malloc(sizeof(char) * (len1 + n + 1));
 
 	else
 		p = malloc(sizeof(char) * (len1 + len2 + 1));
