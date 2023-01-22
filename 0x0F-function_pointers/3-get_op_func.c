@@ -7,7 +7,7 @@
  * Return: Pointer to the corresponding function.
  */
 
-int (*get_op_func(char *s))(int, int)
+int (*get_op_func (char *s))(int, int)
 {
 	int i = 0;
 
