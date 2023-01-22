@@ -2,6 +2,7 @@
 
 #define ERR_MSG "Error"
 
+
 /**
  * is_digit - Helper function to check for digits
  * @s: string to be checked for digit
@@ -22,6 +23,8 @@ int is_digit(char *s)
 }
 
 
+
+
 /**
  * _strlen -Return the length of a string
  * @s: string to evaluate
@@ -39,6 +42,7 @@ int _strlen(char *s)
 }
 
 
+
 /**
  * errors - handles errors for main
  */
@@ -51,6 +55,7 @@ void errors(void)
 }
 
 
+
 /**
  * main - Multiplies two positive integers
  * @argc: argument count
@@ -61,7 +66,8 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
-	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
+	int len1, len2, len, i, carry, digit1, digit2, a = 0;
+	int *result;
 
 	s1 = argv[1];
 	s2 = argv[2];
