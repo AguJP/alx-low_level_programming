@@ -1,11 +1,10 @@
 #include "3-calc.h"
 
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
-
+int op_add (int a, int b);
+int op_sub (int a, int b);
+int op_mul (int a, int b);
+int op_div (int a, int b);
+int op_mod (int a, int b);
 
 
 /**
@@ -15,7 +14,7 @@ int op_mod(int a, int b);
  * Return: sum of a and b
  */
 
-int op_add(int a, int b)
+int op_add (int a, int b)
 {
 	return (a + b);
 }
@@ -28,7 +27,7 @@ int op_add(int a, int b)
  * Return: Difference of b from a
  */
 
-int op_sub(int a, int b)
+int op_sub (int a, int b)
 {
         return (a - b);
 }
@@ -41,7 +40,7 @@ int op_sub(int a, int b)
  * Return: Product of a and b
  */
 
-int op_mul(int a, int b)
+int op_mul (int a, int b)
 {
         return (a * b);
 }
@@ -54,7 +53,7 @@ int op_mul(int a, int b)
  * Return: quotient of a divided by b
  */
 
-int op_div(int a, int b)
+int op_div (int a, int b)
 {
         return (a / b);
 }
@@ -67,7 +66,7 @@ int op_div(int a, int b)
  * Return: a modulo b
  */
 
-int op_mod(int a, int b)
+int op_mod (int a, int b)
 {
         return (a % b);
 }
