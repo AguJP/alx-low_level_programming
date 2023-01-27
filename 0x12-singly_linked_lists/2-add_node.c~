@@ -1,0 +1,9 @@
+#include "lists.h"
+
+/**
+ * add_node - Function to add a new node at the beginning of a list
+ * @head: Pointer to first node
+ * @str: string content for new node
+ * Return: Pointer to new element if successfull, else NULL
+ */
+
