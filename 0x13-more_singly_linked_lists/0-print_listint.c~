@@ -1,0 +1,8 @@
+#include "main.h"
+
+/**
+ * print_listint - Function to print all elements of a listint_t list
+ * @h: listint_t list
+ * Return: elements of list
+ */
+
