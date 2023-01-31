@@ -14,7 +14,7 @@ int sum_listint(listint_t *head)
 	if (!head)
 		return (0);
 
-	while (head)
+	while (temp)
 	{
 		sum += temp->n;
 		temp = temp->next;
