@@ -1,10 +1,6 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-#include <stdio.h>
-#include <stddef.h>
-#include <string.h>
-
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
