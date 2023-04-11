@@ -14,14 +14,14 @@ void shash_table_delete(shash_table_t *ht);
  * Return: If an error occurs - NULL.
  *         Otherwise - a pointer to the new sorted hash table.
  */
-shah_table_t *shash_table_create(unsigned long int size)
+shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *ht;
 	unsigned long int i;
 
 	ht = malloc(sizeof(shash_table_t));
 	if (ht == NULL)
-		return (NUL);
+		return (NULL);
 
 	ht->size = size;
 	ht->array = malloc(sizeof(shash_node_t *) * size);
@@ -54,7 +54,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	value_copy = strdup(value);
-	if (value_copy == NUL)
+	if (value_copy == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
@@ -83,7 +83,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		free(new);
 		return (0);
 	}
-	new->value = value_copy:
+	new->value = value_copy;
 	new->next = ht->arrary[index];
 	ht->array[index] = new;
 
@@ -107,7 +107,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		while (tmp->snext != NULL && strcmp(tmp->snext->key, key) < 0)
 			tmp = tmp->snext;
 		new->sprev = tmp;
-		new-snext = tmp->snext;
+		new->snext = tmp->snext;
 		if (tmp->snext == NULL)
 			ht->stail = new;
 		else
