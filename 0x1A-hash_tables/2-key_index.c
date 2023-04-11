@@ -1,3 +1,5 @@
+#include "hash_tables.h"
+
 /**
  * key_index - Function to return the index of a hashed key using hash_djb2 hash
  * @key: The key
